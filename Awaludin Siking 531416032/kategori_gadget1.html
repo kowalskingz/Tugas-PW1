@@ -1,0 +1,238 @@
+  <!DOCTYPE html>
+<html>
+
+    <head>
+        <title> ITNow </title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+    </head>
+    
+	<body>
+    
+		<div id="head">
+			<a href="home.html">
+				<img src="image/baner.png">
+			</a>	
+        </div>
+    
+        <div id="menu">
+            <a class="menu_1" href="home.html">HOME</a>
+            <a class="menu_1" href="about.html">ABOUT US</a>
+            <a class="menu_1" href="contact.html">CONTACT US</a>
+				
+			<div id="menu_2">
+				<form>
+					<input class="search" type="search" placeholder=" Search...">
+				</form>
+			</div>
+				
+		</div>
+    
+		<div id="menu2">
+			<font class="kategori">Kategori</font>
+			<a href="komputer.html">Komputer</a>
+			<a href="gadget.html">Gadget</a>
+            <a href="security.html">Security</a>
+			<a href="networking.html">Networking</a>
+			<a href="programming.html">Programming</a>
+            <a href="audio.html">Audio</a>
+			<a href="tipstricks.html">Tips Tricks</a>
+		</div>
+   
+		<div id="inside_2">
+        
+            <div id="isi_2">
+				
+				<div id="kontennn">
+					<font class="kontennn_1">Gadget</font>
+				</div>
+    
+				<div id="konten_dalam"> 
+					<font class="judul"><b>Jumlah Core dan Hubungannya dengan Performa Smartphone </b></font>
+					<font class="namawaktu">
+                    <br><b>By</b> Awaludin Siking
+                    </font>
+                    <br><br>
+					<div id="isi_judul">
+                        Saat ingin membeli smartphone salah satu hal yang diperhatikan adalah jumlah Core.  lalu apa sebenarnya hubungan Core dengan performa smartphone? apakah semakin besar jumlah core semakin baik performanya?
+                        <br><br>
+                        Mungkin anda pernah mendengar orang yang membandingkan jumlah core saat membeli Hp. seperti saat melihat ada smartphone dengan spesifikasi 8 core (Octa-core) , mereka akan memandang Hp dengan 4 core (Quad-core) sebelah mata atau kurang mumpuni. namun ada juga beberapa orang yang bilang jumlah 8 core itu nggak terlalu penting! 4 core aja udah kencang kok!
+                        <br><br>
+                        <b>Lalu mana yg benar?</b>
+                        <br><br>
+                        Jawabannya, dua-duanya bisa benar tetapi, dua-duanya bisa juga salah, berikut ulasannya
+                        <br><br>
+                        <img src="image/2.jpg">
+                        <br><br>
+                        <b>Sedikit dasar awal mula Kenapa ada prosesor 8-core (octa-core)</b>
+                        <br><br>
+                        * ARM adalah pemegang hak lisensi untuk prosesor dengan teknologi ARM yang umum dipakai di smartphone.
+                        <br><br>
+                        * Ada 2 jenis lisensi untuk membuat prosesor ARM:
+                        <br>
+                        1. Lisensi untuk menggunakan desain prosesor ARM. Ini dalam prosesor (SoC) biasanya ada nama Cortex. Krn Cortex itu prosesor rancangan ARM sendiri.
+                        <br>
+                        2. Lisensi untuk mendesain prosesor yang kompatibel dengan ARM. Yang terkenal melakukan ini adalah Qualcomm (sebagian) dan Apple.
+                        <br><br>
+                        * Prosesor rancangan ARM memiliki keterbatasan. Akhirnya ARM terpaksa membuat 2 jenis Core:
+                        <br>
+                        1. Core kencang (ini kalau diturunkan GHz-nya ga bisa jadi irit)
+                        <br>
+                        2. Core irit (ini kalau dinaikkan GHz-nya, ga bisa jadi jauh lebih kenceng)
+                        <br><br>
+                        Kedua jenis core ini digabung ke dalam 1 SoC dan sistem ini dikenal dengan nama big.LITTLE. 1 set core irit akan bekerja untuk menghemat daya, 1 set core kencang akan bekerja saat beban berat.
+                        <br><br>
+                        Jadi, penggunaan 8 core sebenarnya dirancang untuk hanya menghidupkan 4 core saja, tergantung kebutuhan. Kalau mau irit ya hidupkan yg irit, kalo mau kencang, hidupkan yg kencang.
+                        <br><br>
+                        TAPI ini membuat masalah muncul, karena peralihan perintah dari core irit ke kencang tidak bisa mulus. Jadi sekarang semua core CORTEX bisa dihidupkan bersamaan.
+                        <br><br></b>
+                        <b>Lalu bagaimana dengan Core rancangan produsen lain?</b>
+                        <br><br>
+                        Istilah untuk core buatan produsen lain adalah CUSTOM CORE. berikut daftar produsen lain yang memproduksi core buatanya sendiri
+                        <br><br>
+                        <b>1. Qualcomm</b>
+                        <br><br>
+                        dengan Snapdrafon 800, 801, 805 menggunakan Custom Core yg bernama KRAIT. Core ini unik sekali karena mampu menghasilkan performa lebih besar per core-nya tapi, bisa jadi irit saat GHz diturunkan. Jadi, produsen tidak melihat adanya kebutuhan untuk switching core.
+                        <br><br>
+                        Core yang sama yang dipakai saat menjalankan game dengan load tinggi, bisa berubah menjadi irit sekali saat dibutuhkan.
+                        <br><br>
+                        Masalahnya, memproduksi core seperti ini cukup mahal.Jadi, Qualcomm sempat mencoba menggunakan big.LITTLE juga. Itu sebabnya ada Qualcomm yang 6-8 core. (615, 808, 810, dll)
+                        <br><br>
+                        Qualcomm Snapdragon 820 adalah prosesor terbaru Qualcomm yang kembali menggunakan Custom Core. Jadi hanya butuh 4 core untuk menghasilkan Antutu 130.000, mengalahkan semua prosesor big.LITTLE yang 8 core.
+                        <br><br>
+                        <b>2. INTEL</b>
+                        <br><br>
+                        Ini beda ya. Karena Intel tidak pakai ARM. Intel pakai arsitektur x86. Itu sebabnya Intel harus mengembangkan sendiri OS Android-nya (atas izin Google). Prosesor Intel memiliki karakter yang sama dengan custom core ARM. Bisa fleksibel, mau kencang ya naikkan GHz, mau irit ya bisa juga. Semua bisa dilakukan dengan core yang sama. Jadi, 4 core sudah cukup.
+                        <br><br>
+                        <b>Sekarang mari kita masuk ke dunia nyata</b>
+                        <br><br>
+                        Core ARM yang ada di pasaran sekarang:
+                        <br>
+                        Core irit: Cortex A53
+                        <br>
+                        Core kencang: Cortex A57, dan yg terbaru Cortex A72 (lbh kencang lbh irit)
+                        <br>
+                        Jadi, prosesor yang premium umumnya akan menggunakan 2-4 Core kencang dan 4 core irit.
+                        <br>    
+                        Contoh: Snapdragon 808 (2x A57, 4x A53), Snapdragon 810 (4x A57, 4x A53), Exynos 7420 (4x A57, 4x A53).
+                        <br><br>
+                        Untuk custom core:
+                        <br>
+                        Snapdragon 800, 801, 805 (4 core Krait). Snapdragon 820 (4 core Kryo)
+                        <br><br>
+                        <b>Kesimpulan</b>
+                        <br><br>
+                        Jika ada yang berkata 4 core lebih kencang dari 8 core, cek dulu, core ini menggunakan teknologi yg mana?
+                        <br>
+                        1. Misal menggunakan 4 core A53 ya jelas akan kalah performanya dari 8 core A53
+                        <br>
+                        2. Misal menggunakan 4 core Intel, itu kencang. Tapi mgkn kira2 setara dengan 4 core Krait atau 8 core A53.
+                    </div>
+				</div>
+    
+			<div id="profill">
+				<h4 class="profil">Profil</h4>
+			</div>
+        
+			<div id="profil2">
+				<a class="fb" href=".com">Facebook</a>
+				<img width="310" height="100" src="image/fb.jpg">
+			</div>
+
+				<div id="infoo">
+					<h4 class="info">Info</h4>
+				</div>
+    
+			<div id="info2">
+				Silahkan mendaftar <a href="form.html">disini</a>
+				untuk mendapatkan informasi update-update movie terbaru
+			</div>
+    
+                    
+			</div>
+    
+			<div id="recentt">
+				<b>Recent Posts</b>
+			</div>
+    
+			<div id="recentt2">
+				<a href="kategori_networking1.html">
+					<img src="image/1.jpg" width="70" height="70">Perbedaan Jaringan 3G dan 4G
+				</a>
+				<br>
+				<font class="recentt2_1">
+					<b>Kategori - </b> Networking
+				</font>
+				<br><br><br><br><br>
+				
+				<a href="kategori_gadget1.html">
+					<img src="image/2.jpg" width="70" height="70">Jumlah Core dan Hubungannya dengan<br><font class="recentt">Performa Smartphone</font>
+				</a>
+				<br>
+				<font class="recentt2_1">
+					<b>Kategori - </b> Gadget
+				</font>
+				<br><br><br><br><br>
+				
+				<a href="kategori_networking2.html">
+					<img src="image/3.jpg" width="70" height="70">Pengertian Subnetting IP Address <br><font class="recentt">Versi 4</font>
+				</a>
+				<br>
+				<font class="recentt2_1">
+					<b>Kategori - </b> Networking
+				</font>
+                
+                <br><br><br><br><br>
+				
+				<a href="kategori_tipstricks2.html">
+					<img src="image/8.jpg" width="70" height="70">Cara Mengatur Layar di Windows Saat<br><font class="recentt">Terhubung Proyektor</font>
+				</a>
+				<br>
+				<font class="recentt2_1">
+					<b>Kategori - </b>Tips Tricks
+				</font>
+                
+                     <br><br><br><br><br>
+				
+				<a href="kategori_komputer1.html">
+					<img src="image/9.jpg" width="70" height="70">Pengertian dan Cara Defrag/Defragment <br><font class="recentt">Hardisk Tanpa Software</font>
+				</a>
+				<br>
+				<font class="recentt2_1">
+					<b>Kategori - </b>Komputer
+				</font>
+                
+                     <br><br><br><br><br>
+				
+				<a href="kategori_audio1.html">
+					<img src="image/10.jpg" width="70" height="70">Macam macam file audio dan <br><font class="recentt">pebedaannya</font>
+				</a>
+				<br>
+				<font class="recentt2_1">
+					<b>Kategori - </b>Audio
+				</font>
+                
+                     <br><br><br><br><br>
+				
+				<a href="kategori_programming1.html">
+					<img src="image/11.jpg" width="70" height="70">Apa itu Extreme Programming ?
+				</a>
+				<br>
+				<font class="recentt2_1">
+					<b>Kategori - </b>Programming
+				</font>
+                
+			</div>
+			</div>
+
+            
+                    
+		</div>
+
+		<div id="bottom">
+			<p align="center">
+				Copyright &copy 2017 AWALUDIN SIKING
+			</p>
+		</div>   
+		
+	</body>
+</html>

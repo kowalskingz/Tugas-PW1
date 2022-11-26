@@ -1,0 +1,200 @@
+  <!DOCTYPE html>
+<html>
+
+    <head>
+        <title> ITNow </title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+    </head>
+    
+	<body>
+    
+		<div id="head">
+			<a href="home.html">
+				<img src="image/baner.png">
+			</a>	
+        </div>
+    
+        <div id="menu">
+            <a class="menu_1" href="home.html">HOME</a>
+            <a class="menu_1" href="about.html">ABOUT US</a>
+            <a class="menu_1" href="contact.html">CONTACT US</a>
+				
+			<div id="menu_2">
+				<form>
+					<input class="search" type="search" placeholder=" Search...">
+				</form>
+			</div>
+				
+		</div>
+    
+		<div id="menu2">
+			<font class="kategori">Kategori</font>
+			<a href="komputer.html">Komputer</a>
+			<a href="gadget.html">Gadget</a>
+            <a href="security.html">Security</a>
+			<a href="networking.html">Networking</a>
+			<a href="programming.html">Programming</a>
+            <a href="audio.html">Audio</a>
+			<a href="tipstricks.html">Tips Tricks</a>
+		</div>
+   
+		<div id="inside_2">
+        
+            <div id="isi_2">
+				
+				<div id="kontennn">
+					<font class="kontennn_1">Networking</font>
+				</div>
+    
+				<div id="konten_dalam"> 
+					<font class="judul"><b>Pengertian Subnetting IP Addres Versi 4</b></font>
+					<font class="namawaktu">
+                    <br><b>By</b> Awaludin Siking
+                    </font>
+                    <br><br>
+					<div id="isi_judul">
+                    Subnetting adalah proses memecah suatu IP jaringan ke sub jaringan yang lebih kecil yang disebut "subnet" Subnetting digunakan untuk memudahkan pengelola jaringan komputer (system Administrator, Network Administrator, maupun pengguna biasa) dalam mengelola jaringan, melakukan alokasi IP Address untuk setiap ruangan dan gedung sesuai dengan kebutuhan. Proses subnetting sendiri dilakukan dengan menggunakan nilai CIDR seperti yang disebutkan sebelumnya.
+                    <br><br>
+                    <b>CIDR (Classless Inter Domain Routing)</b>
+                    <br>
+                    CIDR atau Classless Inter Domain Routing merupakan sebuah proses sebagai solusi untuk mengefisiensi dalam pengalamatan alokasi IP Address yang dilakukan pada pengkelasan IP Address yang ada. Berikut adalah table CIDR untuk keperluan Subnetting :
+                    <br>
+                    <img src="image/3.jpg" width="450">
+                    <br><br>
+                    <b>Subnetting IP Address Kelas C</b>
+                    <br>
+                    Subnetting IP Address kelas C merupakan kelas subnetting yang paling mudah, karena IP Address kelas C hanya memiliki Host ID (Alamat Host) pada bagian terakhir IP Addressnya. Contoh IP Address 192.168.2.1 maka angka 1 pada digit terakhir adalah yang dimaksud dengan Host ID, sedangkan 3 blok angka sebelumnya adalah Net ID atau Network ID (Alamat Jaringan).
+                    <br><br>
+                    Langsung ke tahap perhitungannya, sebagai contoh, kita menganalisa IP Address 192.168.1.0/26 atau dapat ditulis dengan 192.168.1.0 netmask 255.255.255.192 yang berarti IP Address tersebut memakai prefix length /26 pada tabel CIDR. Langkah pertama adalah merubah angka prefix tersebut menjadi 32 bit bilangan biner (IPv4 berjumlah 32 bit), maka akan menjadi 11111111.11111111.11111111.11000000 (tulis angka 1 sebanyak 26 kali dengan pemisahan 8 digit, kemudian setelah mencapai 26, untuk memenuhi 32 bit maka isi angka 0). Setelah itu rubah 32 bit bilangan biner tersebut kedalam bentuk decimal, maka akan diperoleh angka 255.255.255.192 . Subnetting sendiri akan terfokus kedalam 4 hal, diantaranya :
+                    <ul>
+                        <li>Jumlah Subnet = 2x , dimana x adalah banyaknya binari 1 pada oktet terakhir subnet mask (2 oktet terakhir untuk kelas B, dan 3 oktet terakhir untuk kelas A). Jadi Jumlah Subnet adalah 22 = 4 subnet.</li>
+                        <li>B. Jumlah Host Per Subnet = 2y - 2, dimana y adalah adalah kebalikan dari x yaitu banyaknya binari 0 pada oktet terakhir subnet.</li> Jadi jumlah host per subnet adalah 26 - 2 = 62 host.
+                        <li>Blok Subnet = 256 - 192 (nilai oktet terakhir subnet mask) = 64. Subnet berikutnya adalah 64 + 64 = 128, dan 128+64=192. Jadi subnet lengkapnya adalah 0, 64, 128, 192</li>
+                        <li>>Keterangan Untuk Tiap subnetnya, data atau alokasi tiap subnet akan disajikan dalam bentuk tabel :</li>
+                        <img src="image/86.jpg">
+                    </ul>
+                    <b>Subnetting IP Address Kelas B</b>
+                    <br>
+                    Subnetting IP Address kelas B hampir sama dengan kelas C, hanya saja kelas B memiliki Net ID pada 2 oktet pertama dan Host ID pada 2 oktet terakhir IP Address. Langsung saja kepada contoh kasusnya, IP Address 172.16.0.0/18 dirubah menjadi 32 bit bilangan biner untuk prefixnya menjadi 11111111.11111111.11000000.00000000 lalu dirubah kedalam bilangan desimal menjadi 255.255.192.0 . dapat dihitung menjadi beberapa subnet dan host :
+                    <ul>
+                        <li>Jumlah Subnet = 2x, dimana x adalah banyaknya binari 1 pada 2 oktet terakhir. Jadi Jumlah Subnet adalah 22 = 4 subnet.</li>
+                        <li>Jumlah Host per Subnet = 2y - 2, dimana y adalah adalah kebalikan dari x yaitu banyaknya binari 0 pada 2 oktet terakhir. Jadi jumlah host per subnet adalah 214 - 2 = 16.382 host.</li>
+                        <li>Blok Subnet = 256 - 192 = 64. Subnet berikutnya adalah 64 + 64 = 128, dan 128+64=192. Jadi subnet lengkapnya adalah 0, 64, 128, 192 .</li>
+                        <li>Keterangan Untuk Tiap subnetnya :</li>
+                        <br>
+                        <img src="image/87.jpg">
+                        </ul>
+                     <b>Subnetting IP Address Kelas A</b>
+                        <br>
+                        Selanjutnya untuk Subnetting kelas A karena peruntukan daya tampung alokasi IP Address yang banyak, maka IP kelas A memiliki Net ID pada oktet pertama, dan Host ID pada 3 oktet terakhir. Untuk contoh kasusnya misalkan IP Address 10.0.0.0/16 . maka jika dirubah menjadi subnet mask 32 bit bilangan biner akan menjadi 11111111.11111111.00000000.00000000 setelah itu dirubah kedalam bentuk desimal akan menjadi 255.255.0.0
+                       
+                    </div>
+				</div>
+    
+			<div id="profill">
+				<h4 class="profil">Profil</h4>
+			</div>
+        
+			<div id="profil2">
+				<a class="fb" href=".com">Facebook</a>
+				<img width="310" height="100" src="image/fb.jpg">
+			</div>
+
+				<div id="infoo">
+					<h4 class="info">Info</h4>
+				</div>
+    
+			<div id="info2">
+				Silahkan mendaftar <a href="form.html">disini</a>
+				untuk mendapatkan informasi update-update movie terbaru
+			</div>
+    
+                    
+			</div>
+    
+			<div id="recentt">
+				<b>Recent Posts</b>
+			</div>
+    
+			<div id="recentt2">
+				<a href="kategori_networking1.html">
+					<img src="image/1.jpg" width="70" height="70">Perbedaan Jaringan 3G dan 4G
+				</a>
+				<br>
+				<font class="recentt2_1">
+					<b>Kategori - </b> Networking
+				</font>
+				<br><br><br><br><br>
+				
+				<a href="kategori_gadget1.html">
+					<img src="image/2.jpg" width="70" height="70">Jumlah Core dan Hubungannya dengan<br><font class="recentt">Performa Smartphone</font>
+				</a>
+				<br>
+				<font class="recentt2_1">
+					<b>Kategori - </b> Gadget
+				</font>
+				<br><br><br><br><br>
+				
+				<a href="kategori_networking2.html">
+					<img src="image/3.jpg" width="70" height="70">Pengertian Subnetting IP Address <br><font class="recentt">Versi 4</font>
+				</a>
+				<br>
+				<font class="recentt2_1">
+					<b>Kategori - </b> Networking
+				</font>
+                
+                <br><br><br><br><br>
+				
+				<a href="kategori_tipstricks2.html">
+					<img src="image/8.jpg" width="70" height="70">Cara Mengatur Layar di Windows Saat<br><font class="recentt">Terhubung Proyektor</font>
+				</a>
+				<br>
+				<font class="recentt2_1">
+					<b>Kategori - </b>Tips Tricks
+				</font>
+                
+                     <br><br><br><br><br>
+				
+				<a href="kategori_komputer1.html">
+					<img src="image/9.jpg" width="70" height="70">Pengertian dan Cara Defrag/Defragment <br><font class="recentt">Hardisk Tanpa Software</font>
+				</a>
+				<br>
+				<font class="recentt2_1">
+					<b>Kategori - </b>Komputer
+				</font>
+                
+                     <br><br><br><br><br>
+				
+				<a href="kategori_audio1.html">
+					<img src="image/10.jpg" width="70" height="70">Macam macam file audio dan <br><font class="recentt">pebedaannya</font>
+				</a>
+				<br>
+				<font class="recentt2_1">
+					<b>Kategori - </b>Audio
+				</font>
+                
+                     <br><br><br><br><br>
+				
+				<a href="kategori_programming1.html">
+					<img src="image/11.jpg" width="70" height="70">Apa itu Extreme Programming ?
+				</a>
+				<br>
+				<font class="recentt2_1">
+					<b>Kategori - </b>Programming
+				</font>
+                
+			</div>
+			</div>
+
+            
+                    
+		</div>
+
+		<div id="bottom">
+			<p align="center">
+				Copyright &copy 2017 AWALUDIN SIKING
+			</p>
+		</div>   
+		
+	</body>
+</html>
